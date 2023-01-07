@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: azoRegular;
+  src: url("../fonts/AzoSans-Regular.otf");
+}
+@font-face {
+  font-family: azoBlack;
+  src: url("../fonts/AzoSans-Black.otf");
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #232323;
+  width: 100vw;
+  height: 100vh;
+}
+body h1 {
+  color: #00FF80;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-family: azoBlack;
+  text-transform: uppercase;
+}
+body .componentsInput {
+  font-family: azoRegular;
+  margin: 20px 0 0 0;
+  padding: 30px;
+}
+body .componentsInput input {
+  font-size: 18px;
+  font-family: azoRegular;
+  background-color: #353535;
+  padding: 8px;
+}
+body .componentsInput #text-cep {
+  outline: none;
+  margin-right: 2px;
+  color: #00FF80;
+  border: 2px solid #00FF80;
+}
+body .componentsInput #text-cep::placeholder {
+  color: #00FF80;
+}
+body .componentsInput button {
+  font-size: 18px;
+  font-family: azoRegular;
+  padding: 8px;
+  margin-left: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #00FF80;
+  background-color: #353535;
+  border: 2px solid #00FF80;
+}
+body .componentsInput button:hover {
+  background-color: #00FF80;
+  color: #232323;
+  font-weight: bold;
+}
+body #contentDiceCity {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  color: #00FF80;
+}
+body #contentDiceCity span {
+  font-size: 18px;
+  font-family: azoRegular;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
