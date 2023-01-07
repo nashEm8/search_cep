@@ -1,0 +1,68 @@
+@use 'mixins'
+@use 'variables'
+
+*
+    margin: 0
+    padding: 0
+
+@font-face
+    font-family: azoRegular
+    src: url('../fonts/AzoSans-Regular.otf')
+
+@font-face
+    font-family: azoBlack
+    src: url('../fonts/AzoSans-Black.otf')
+
+body
+    @include mixins.flexBody
+
+    h1
+        color: variables.$color-text
+        font-size: 35px
+        letter-spacing: 1px
+        font-family: azoBlack
+        text-transform: uppercase
+
+    .componentsInput
+        font-family: azoRegular
+        margin: 20px 0 0 0
+        padding: 30px
+
+        input
+            @include mixins.formatedText
+            background-color: variables.$content-bg
+            padding: 8px
+
+        #text-cep
+            outline: none
+            margin-right: 2px
+            color: variables.$color-text
+            border: 2px solid variables.$color-text
+
+            &::placeholder
+                color: variables.$color-text
+
+        button
+            @include mixins.formatedText
+            padding: 8px
+            margin-left: 2px
+            border-radius: 5px
+            cursor: pointer
+            color: variables.$color-text
+            background-color: variables.$content-bg
+            border: 2px solid variables.$color-text
+
+            &:hover
+                background-color: variables.$color-text
+                color: variables.$bg-color
+                font-weight: bold
+
+    #contentDiceCity
+        width: 300px
+        display: flex
+        flex-direction: column
+        color: variables.$color-text
+
+        span
+            @include mixins.formatedText
+            margin: 10px 0
